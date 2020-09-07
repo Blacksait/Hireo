@@ -8,19 +8,23 @@
     <file url="file://$PROJECT_DIR$/app/Article.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Category.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Http/Controllers/ArticlesController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Http/Controllers/Auth/RegisterController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Http/Controllers/HomeController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Http/Controllers/MailController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Http/Controllers/StaticController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Http/Controllers/UserController.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Http/Controllers/VacancyController.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Job.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Job_type.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Job_types.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Providers/AppServiceProvider.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/Tag_type.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/app/User.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/app/Vacancy.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/composer.json" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/app.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/config/mail.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/database/migrations/2020_01_08_185908_create_articles_table.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/database/migrations/2020_01_28_201442_add_new_field_to_articles_user_id.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/database/migrations/2020_01_29_184912_add_main_image_to_articles.php" charset="UTF-8" />
@@ -36,6 +40,7 @@
     <file url="file://$PROJECT_DIR$/database/migrations/2020_08_06_210705_create_article_category_table.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/database/migrations/2020_08_06_210915_create_categories_table.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/database/migrations/2020_08_06_212218_create_article_category_table.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/database/migrations/2020_08_31_164309_create_user_role_table.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/laravel_db.sql" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/prod/app/controllers/Basket.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/prod/app/controllers/Categories.php" charset="UTF-8" />
@@ -68,6 +73,7 @@
     <file url="file://$PROJECT_DIR$/resources/views/articles/index.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/articles/show.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/auth/login.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/auth/passwords/email.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/auth/passwords/reset.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/auth/register.blade.php" charset="UTF-8" />
@@ -79,6 +85,7 @@
     <file url="file://$PROJECT_DIR$/resources/views/mail.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/static/about.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/static/index.blade.php" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/resources/views/vacancy/create.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/resources/views/vendor/pagination/custom-pg.blade.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/routes/web.php" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/../modules/php/PHP_7.1-x64/php.ini" charset="windows-1251" />

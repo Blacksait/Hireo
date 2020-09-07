@@ -41,23 +41,34 @@
                         <span>Already have an account? <a href="/login">Log In!</a></span>
                     </div>
 
-                    <!-- Account Type -->
-                    <div class="account-type">
-                        <div>
-                            <input type="radio" name="account-type-radio" id="freelancer-radio" class="account-type-radio" checked/>
-                            <label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Freelancer</label>
-                        </div>
+{{--                    <!-- Account Type -->--}}
+{{--                    <div class="account-type">--}}
+{{--                        <div>--}}
+{{--                            <input type="radio" name="role" id="freelancer-radio" class="account-type-radio @error('role') is-invalid @enderror" checked autocomplete="role"/>--}}
+{{--                            <label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Freelancer</label>--}}
+{{--                        </div>--}}
 
-                        <div>
-                            <input type="radio" name="account-type-radio" id="employer-radio" class="account-type-radio"/>
-                            <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Employer</label>
-                        </div>
-                    </div>
+{{--                        <div>--}}
+{{--                            <input type="radio" name="role" id="employer-radio" class="account-type-radio @error('role') is-invalid @enderror" autocomplete="role"/>--}}
+{{--                            <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Employer</label>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
 
                     <!-- Form -->
 
                     <form method="POST" id="register-account-form" action="{{ route('register') }}">
                         @csrf
+                        <div class="account-type">
+                            <div>
+                                <input type="radio" name="role" id="freelancer-radio" class="account-type-radio" value="Freelancer" checked/>
+                                <label for="freelancer-radio" class="ripple-effect-dark"><i class="icon-material-outline-account-circle"></i> Freelancer</label>
+                            </div>
+
+                            <div>
+                                <input type="radio" name="role" id="employer-radio" class="account-type-radio" value="Employer"/>
+                                <label for="employer-radio" class="ripple-effect-dark"><i class="icon-material-outline-business-center"></i> Employer</label>
+                            </div>
+                        </div>
                         <div class="input-with-icon-left">
                             <i class="icon-feather-user"></i>
                             <input type="text" class="input-text with-border @error('name') is-invalid @enderror" value="{{ old('name') }}" required autocomplete="name" autofocus name="name" id="name" placeholder="Name"/>
@@ -94,10 +105,9 @@
                             <i class="icon-material-outline-lock"></i>
                             <input type="password" class="input-text with-border" name="password_confirmation" id="password-confirm" placeholder="Repeat Password" required autocomplete="new-password"/>
                         </div>
+                        <!-- Button -->
+                        <button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit">Register<i class="icon-material-outline-arrow-right-alt"></i></button>
                     </form>
-
-                    <!-- Button -->
-                    <button class="button full-width button-sliding-icon ripple-effect margin-top-10" type="submit" form="login-form">Register <i class="icon-material-outline-arrow-right-alt"></i></button>
 
 {{--                    <!-- Social Login -->--}}
 {{--                    <div class="social-login-separator"><span>or</span></div>--}}

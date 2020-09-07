@@ -338,7 +338,8 @@
                                         </div>
 
                                         <ul class="user-menu-small-nav">
-                                            <li><a href="articles/create"><i class="icon-material-outline-dashboard"></i> Create Job</a></li>
+                                            <li><a href="/articles/create"><i class="icon-material-outline-dashboard"></i> Create Job</a></li>
+                                            <li><a href="/vacancy/create"><i class="icon-material-outline-dashboard"></i> Create vacancy</a></li>
                                             <li>
                                                 <a class="dropdown-item" href="/home">
                                                     <i class="icon-material-outline-settings"></i>

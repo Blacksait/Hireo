@@ -16,6 +16,7 @@ Route::get('/about', 'StaticController@about');
 Route::get('send', 'MailController@send');
 
 Route::resource('articles', 'ArticlesController');
+Route::resource('vacancy', 'VacancyController');
 
 Auth::routes();
 

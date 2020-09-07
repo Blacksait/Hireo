@@ -140,7 +140,7 @@
                             <div class="job-listing-details">
                                 <!-- Logo -->
                                 <div class="job-listing-company-logo">
-                                    <img src="images/{{$el->logo}}" alt="">
+                                    <img src="/storage/images/{{$el->logo}}" alt="">
                                 </div>
 
                                 <!-- Details -->
@@ -160,7 +160,13 @@
                                 <span class="bookmark-icon"></span>
                                 <ul>
                                     <li><i class="icon-material-outline-location-on"></i> {{$el->place}}</li>
-                                    <li><i class="icon-material-outline-business-center"></i>{{$el->position}}</li>
+                                    <li><i class="icon-material-outline-business-center"></i>
+{{--                                        @foreach(\App\Job::all() as $job)--}}
+
+{{--                                              {{ $job->label  }}--}}
+
+{{--                                        @endforeach--}}
+                                    </li>
                                     <li><i class="icon-material-outline-account-balance-wallet"></i>${{$el->payment}}</li>
                                     <li><i class="icon-material-outline-access-time"></i>
                                         <?php
