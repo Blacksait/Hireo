@@ -14,7 +14,7 @@
                         </div>
                     @endif
                     <div class="container mb-5" style="margin-bottom: 10%;">
-                        Вы вошли!!!
+                        Вы вошли как Employer!!!
                     </div>
 
                 </div>
