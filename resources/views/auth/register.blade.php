@@ -54,7 +54,7 @@
 {{--                        </div>--}}
 {{--                    </div>--}}
 
-                    <!-- Form -->
+{{--                    <!-- Form -->--}}
 
                     <form method="POST" id="register-account-form" action="{{ route('register') }}">
                         @csrf

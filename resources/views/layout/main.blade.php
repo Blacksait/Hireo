@@ -302,11 +302,11 @@
                                 @guest
                                 <ul class="navbar-nav ml-auto" style="list-style: none">
                                     <li class="nav-item">
-                                        <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
+                                        <a class="alink" href="{{ route('login') }}">{{ __('Login') }}</a>
                                     </li>
                                     @if (Route::has('register'))
                                         <li class="nav-item">
-                                            <a class="nav-link" href="{{ route('register') }}">{{ __('Register') }}</a>
+                                            <a class="alink" href="{{ route('register') }}">{{ __('Register') }}</a>
                                         </li>
                                 </ul>
                                     @endif
@@ -614,20 +614,20 @@
 <script src="{{ asset('js/snackbar-user-status.js') }}" defer></script>
 <script src="{{ asset('js/google-autocomplete.js') }}" defer></script>
 
-{{--<script>--}}
-{{--    // // Snackbar for user status switcher--}}
-{{--    // $('#snackbar-user-status label').click(function() {--}}
-{{--    //     Snackbar.show({--}}
-{{--    //         text: 'Your status has been changed!',--}}
-{{--    //         pos: 'bottom-center',--}}
-{{--    //         showAction: false,--}}
-{{--    //         actionText: "Dismiss",--}}
-{{--    //         duration: 3000,--}}
-{{--    //         textColor: '#fff',--}}
-{{--    //         backgroundColor: '#383838'--}}
-{{--    //     });--}}
-{{--    // });--}}
-{{--</script>--}}
+<script>
+    // Snackbar for user status switcher
+    $('#snackbar-user-status label').click(function() {
+        Snackbar.show({
+            text: 'Your status has been changed!',
+            pos: 'bottom-center',
+            showAction: false,
+            actionText: "Dismiss",
+            duration: 3000,
+            textColor: '#fff',
+            backgroundColor: '#383838'
+        });
+    });
+</script>
 
 
 <!-- Google Autocomplete -->

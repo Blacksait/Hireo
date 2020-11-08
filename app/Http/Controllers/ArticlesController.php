@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Article;
 use App\Job;
+use App\Job_type;
 use App\Tag;
 use App\User;
 use Illuminate\Http\Request;
@@ -21,11 +22,13 @@ class ArticlesController extends Controller
     {
         $articlesQuery = Article::query();//запрос
 
+
 //        dd(request('tags'));
 //        dd($articlesQuery->find(1)->tag_types);
 
         if ($request->filled('name')) {//если наш запрос имеет name
             $articlesQuery->where('name', 'like', "%$request->name%");
+
         }
 
         if ($request->filled('place')) {//если наш запрос имеет place
@@ -112,7 +115,14 @@ class ArticlesController extends Controller
      */
     public function show($id)
     {
-        //
+        $article = Article::find($id);
+        $job = $article->jobs->get(0);
+
+//        foreach ($article->jobs as $job){
+//            return view('articles.show')->with('article',$article)->with('job',$job);
+//        }
+
+        return view('articles.show')->with('article',$article)->with('job',$job);
     }
 
     /**
@@ -121,7 +131,7 @@ class ArticlesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit($id)//
     {
         //
     }

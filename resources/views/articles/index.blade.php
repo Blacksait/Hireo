@@ -131,9 +131,11 @@
                     </div>
 
                     <div class="listings-container grid-layout margin-top-35">
+
                     @if(count($articles) > 0)
                         @foreach($articles as $el)
                     <!-- Job Listing -->
+
                         <a href="/articles/{{$el->id}}" class="job-listing">
 
                             <!-- Job Listing Details -->
@@ -170,13 +172,20 @@
                                     <li><i class="icon-material-outline-account-balance-wallet"></i>${{$el->payment}}</li>
                                     <li><i class="icon-material-outline-access-time"></i>
                                         <?php
-                                            $update_at_day =  e($el->updated_at);
-                                            $current_day = date('d-m-Y');
-                                            $first_date_transform = strtotime($update_at_day);
-                                            $second_date_transform = strtotime($current_day);
-                                            $interval = $second_date_transform-$first_date_transform;
-                                            $interval = $interval/(60*60*24);
+                                        $update_at_day =  e($el->updated_at);
+                                        $current_day = date('d-m-Y');
+                                        $first_date_transform = strtotime($update_at_day);
+                                        $second_date_transform = strtotime($current_day);
+
+                                        $interval = $second_date_transform -$first_date_transform;
+                                        $interval = $interval/(60*60*24);
+                                        $interval = round($interval);
+                                        if ($interval < 0){
+                                            echo 0;
+                                        }else{
                                             echo $interval;
+                                        }
+
                                         ?>
 
                                         days ago

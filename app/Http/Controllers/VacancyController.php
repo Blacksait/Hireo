@@ -43,9 +43,13 @@ class VacancyController extends Controller
            'name' => 'required|max:40',
            'title' => 'required|max:60',
            'place' => 'required|max:60',
+           'category_types' => 'required|max:60',
+           'job_types' => 'required|max:60',
+           'tag_types' => 'required|max:60',
            'payment' => 'required|max:60',
            'logo' => 'nullable|image|max:1999'
         ]);
+
 
         if ($request->hasFile('logo')){
             $file = $request->file('logo')->getClientOriginalName();//находим имя файла с разрешением
